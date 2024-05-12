@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Proyecto de JS</title>
+        <meta name="description" content>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Estilos CSS-->
+        <link rel="stylesheet" href="css/styles.css">
+        <!--slider-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    </head>
+    <body>
+        <section id="global">
+            <!--CABECERA-->
+            <header>
+                <div id="logo">
+                    <h1>PROYECTO JS</h1>
+                </div>
+                <div class="clearfix"></div>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="#">INICIO</a></li>
+                        <li><a href="#">CALCULADORA</a></li>
+                        <li><a href="#">RELOJ</a></li>
+                        <li><a href="#">JUEGO CHAPUZA</a></li>
+                        <li><a href="#">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+            </header>   
+            <!--SLIDER-->
+            <div class="bxslider">
+                <div><img src="img/hojas.jpg" title="Hojas" /></div>
+                <div><img src="img/rojo.jpg" title="Rojo" /></div>
+                <div><img src="img/cielo.jpg" title="Cielo" /></div>
+            </div>
+            <!--contenido-->
+            <section>
+                <div id="posts">
+                    <article class="post">
+                        <h2>Prueba de titulo</h2>
+                        <span class="date">Fecha de publicacion</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, nisi vel nulla molestiae ipsam cum nihil mollitia fuga itaque blanditiis quaerat ullam ipsa consequuntur a in alias praesentium corporis repellat!</p>
+                        <a href="#" class="button-more">Leer más</a>
+                    </article>
+                    <article class="post">
+                        <h2>Prueba de titulo</h2>
+                        <span class="date">Fecha de publicacion</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, nisi vel nulla molestiae ipsam cum nihil mollitia fuga itaque blanditiis quaerat ullam ipsa consequuntur a in alias praesentium corporis repellat!</p>
+                        <a href="#" class="button-more">Leer más</a>
+                    </article>
+                </div>
+                <div id="sidebar">
+                    <div id="about">
+                        <h4><span>¿Quien soy?</span></h4>
+                        <img src="img/caracol.jpg">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div id="login">
+                        <h4><span>Identificate</span></h4>
+                        <form>
+                            <p>
+                                <label for="name">Name</label>
+                                <input type="text" name="name"/>
+                            </p>
+                            <p>
+                                <label for="email">Email</label>
+                                <input type="text" name="email">
+                            </p>
+                            <p>
+                                <label for="password">Password</label>
+                            <input type="password" name="password">
+                            </p>
+                            <input type="submit" value="Entrar">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <div class="clearfix"></div>
+        </section>
+        <footer>
+            Masater de JavaScript de Andres Herrera &copy;
+        </footer>
+
+        <script src="js/main.js" async defer></script>
+    </body>
+</html>

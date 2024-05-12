@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>-->
+		<script type="text/javascript" src="../../jquery-3.7.1.min.js"></script>
+		<title>APRENDIENDO AJAX CON JQUERY</title>
+		<style type="text/css">
+			#datos{
+				width: 250px;
+				height: 250px;
+				border: 2px solid green;
+				overflow: scroll;
+			}
+		</style>
+	</head>
+	<body>
+			<h1>APRENDIENDO AJAX CON JQUERY</h1>
+			<form action="https://reqres.in/api/users" method="POST" id="formulario">
+				Nombre: <input type="text" name="name">
+				Trabajo: <input type="text" name="job">
+				<input type="submit" value="Registrar">
+			</form>
+			<br>
+			<div id="datos"></div>
+		<script type="text/javascript" src="16-AJAX_JQUERY.js"></script>
+	</body>
+</html>

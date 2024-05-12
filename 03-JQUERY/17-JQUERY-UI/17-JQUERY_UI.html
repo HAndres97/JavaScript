@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>-->
+		<script type="text/javascript" src="../../jquery-3.7.1.min.js"></script>
+
+		<!--Esta libreria va despues de Jquery, son estructuras CSS, que va utilizar JQUERY-UI-->
+		<link rel="stylesheet" type="text/css" href="jquery-ui-1.13.2/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="jquery-ui-1.13.2/jquery-ui.structure.min.css">
+		<link rel="stylesheet" type="text/css" href="jquery-ui-1.13.2/jquery-ui.theme.min.css">
+
+
+		<!--Esta libreria va despues de Jquery, ya que es otra libreria basada en JQuery -->
+		<script type="text/javascript" src="jquery-ui-1.13.2/jquery-ui.min.js"></script>
+
+		<script type="text/javascript" src="17-JQUERY_UI.js"></script>
+
+		<title>APRENDIENDO JQUERY-UI</title>
+		<style type="text/css">
+			.elemento{
+				width: 300px;
+				height: 200px;
+				border: 4px solid black;
+				background: lightblue;
+				margin: 20px;
+				float: left;
+			}
+			.lista-seleccionable li{
+				width: 80%;
+				padding: 20px;
+				border: 1px solid #ccc;
+				list-style: none;
+				cursor: pointer;
+			}
+
+			.lista-seleccionable .ui-selecting{
+				background: green;
+			}
+			.lista-seleccionable .ui-selected{
+				background: blue;
+				color: white;
+			}
+			.caja-efectos{
+				display: none;
+				float: none;
+				width: 300px;
+				height: 200px;
+				border: 4px solid black;
+				background: lightpink;
+				margin: 20px;
+			}
+			#elemento-movido{
+				width: 100px;
+				height: 100px;
+				border: 4px solid red;
+			}
+			#area{
+				width: 300px;
+				height: 300px;
+				border: 4px solid green;
+			}
+			#mostrar{
+				margin-bottom: 20px;
+			}
+			.separar{
+				clear: both;
+			}
+			#popup{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+			<h1>APRENDIENDO JQUERY-UI</h1>
+			<br>
+			<hr>
+			<h2>Plugins y Widgets</h2>
+			<h3>Tooltips</h3>
+			<a href="#" title="Acceder a la seccion de datos" id="datos">Mis Datos</a>
+			<a href="#" title="Registrarse" id="datos">Identificarse</a>
+			<a href="#" title="Cuenta" id="datos">Loguearse</a>
+			<a href="#" title="Ver amigos" id="datos">Ver todos mis amigos</a>
+
+			<h3>Cuadros de Dialogos</h3>
+			<button id="lanzar-popup">Mostrar Pop UP</button>
+			<div id="popup" title="¿Estas seguro?">
+				<p>
+					Si continuas en el Curso Aprenderas mucho de JavaScript
+				</p>
+			</div>
+			<h3>Calendario</h3>
+			<input type="text" id="calendario">
+
+			<h3>Tabs, pestañas</h3>
+			<div id="pestanas">
+				<ul>
+					<li><a href="#tabs-1">Pestaña 1</a></li>
+					<li><a href="#tabs-2">Pestaña 2</a></li>
+					<li><a href="#tabs-3">Pestaña 3</a></li>
+					<li><a href="#tabs-4">Pestaña 4</a></li>
+				</ul>
+				<div id="tabs-1">
+					Hola soy la primera pestaña
+				</div>
+				<div id="tabs-2">
+					Hola soy la segunda pestaña
+				</div>
+				<div id="tabs-3">
+					Hola soy la tercera pestaña
+				</div>
+				<div id="tabs-4">
+					Hola soy la cuarta pestaña
+				</div>
+			</div>
+			<br>
+			<hr>
+			<button id="mostrar">Mostrar</button>
+			<div class="caja-efectos elemento"></div>
+			<div id="elemento-movido"></div>
+			<br>
+			<div id="area"></div>
+			<ul class="lista-seleccionable">
+				<li>GT5</li>
+				<li>Need for Speed</li>
+				<li>Crash Bandicoot</li>
+				<li>Super MArio</li>
+				<li>Galaxian</li>
+			</ul>
+			<div class="elemento">
+				Hola soy un elemento de la Web
+			</div>
+			<div class="elemento">
+				Hola soy un elemento de la Web
+			</div>
+			<div class="elemento">
+				Hola soy un elemento de la Web
+			</div>
+			<div class="elemento">
+				Hola soy un elemento de la Web
+			</div>
+			<span class="separar"></span>
+			<hr>
+	</body>
+</html>
